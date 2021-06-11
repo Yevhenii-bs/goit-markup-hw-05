@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Студия</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet"
@@ -46,9 +46,9 @@
     <section class="hero-section overlay">
         <div class="container hero-container">
             <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="button">Заказать услугу</button>
+            <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
-        </section>
+    </section>
 
     <!--ПРЕИМУЩЕСТВА-->
     <section class="section">
@@ -104,9 +104,15 @@
 <div class="container">
         <h2 class="section-work">Чем мы занимаемся</h2>
         <uL class="work-list">
-            <li><img src="./images/box1.jpg" alt="рабочий стол1" width="370"></li>
-            <li><img src="./images/box2.jpg" alt="рабочий стол2" width="370"></li>
-            <li><img src="./images/box3.jpg" alt="рабочий стол3" width="370"></li>
+            <li class="work-item"><img src="./images/box1.jpg" alt="рабочий стол1" width="370">
+            <p class="work-text">десктопные приложения</p>
+            </li>
+            <li class="work-item"><img src="./images/box2.jpg" alt="рабочий стол2" width="370">
+            <p class="work-text">мобильные приложения</p>
+            </li>
+            <li class="work-item"><img src="./images/box3.jpg" alt="рабочий стол3" width="370">
+            <p class="work-text">дизайнерские решения</p>
+            </li>
         </uL>
         </div>
 
@@ -372,5 +378,20 @@
     </div>    
 </div>
 </footer>
+
+        <div
+            class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p>Lorem ipsum dolor sit amet.
+                </p>
+                <button class="modal-close" data-modal-close>
+                    <svg width="11px" height="11px">
+                        <use href="./images/svg/symbol-defs.svg#icon-button"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
